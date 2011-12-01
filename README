@@ -1,0 +1,14 @@
+This Project is develop by SAS team:
+Itzhak Razi
+Shai Levy
+Tzlel Yitzhak
+Yuri Polonskiy
+Mor Amedi
+
+Client Side:
+The SW give the possibility to send the location to specific phone number.
+
+Server Side:
+The SW listen to SMS massage and try catch some massage with known format.
+After finding the SMS, parse the location and pass the points to map.
+  
