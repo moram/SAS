@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="hello">Hello World!</string>
-    <string name="app_name">SAS_Client_Git</string>
-
+    <string name="hello">Press on the button in case of emergency</string>
+    <string name="app_name">SAS_Client</string>
 </resources>

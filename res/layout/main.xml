@@ -1,12 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+
+<LinearLayout
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="456dp"
     android:orientation="vertical" >
 
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+		<TextView  
+    		android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content" 
+    		android:text="@string/hello" 
+    		android:gravity="center"/>
+		
+	</LinearLayout>
+	<TextView 
+    		android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content" 
+    		android:text=" " 
+    		android:gravity="center"/>
+	<ImageButton
+		android:id="@+id/help_button"
+	   	android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/help_button_128_128_1"
+	    android:layout_gravity="center"
+		/>
+	<TextView  
+    		android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content" 
+    		android:text=" " 
+    		android:gravity="center"/>
+	
+      
     <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:text="Phone number of recipient (optional)"
+        />
+    
+    <LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+	        
+	    <EditText 
+	        android:id="@+id/txtPhoneNo"  
+	        android:layout_weight="1"
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content"
+	        android:inputType="phone"        
+	        android:hint="(972)509955121"
+	        />
+	    
+		
+	</LinearLayout>    
+
+	     <TextView  
+    		android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content" 
+    		android:text=" " 
+    		android:gravity="center"/>   
+	    <TextView  
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content"
+	        android:text="Message added in SMS and email"
+	        />     
+	    <EditText 
+	        android:id="@+id/txtMessage"  
+	        android:hint="I'm in trouble. Help me please."
+	        android:layout_width="fill_parent" 
+	        android:layout_height="120px"
+	        android:gravity="top"
+	        />
+	    
+	    <!-- empty line -->
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text=" "
+	        android:textColor="#666666"
+	        android:textSize="14sp"
+	        android:textStyle="bold" />
+
+	     <!--ImageView
+	         android:id="@+id/imageView1"
+	         android:layout_width="390dp"
+	         android:layout_height="100dp"
+	         android:layout_gravity="center"
+	         android:src="@drawable/sas_app_icon" /-->
+          
+   
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:layout_height="wrap_content" android:layout_width="match_parent"
+		android:orientation="horizontal" android:layout_marginTop="40dip">
+		<TextView android:text="Latitude: " android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/TextView01" android:layout_marginLeft="10dip" android:layout_marginRight="5dip" android:textSize="20dip"></TextView>
+		<TextView android:text="unknown" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/TextView02" android:textSize="20dip"></TextView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_height="wrap_content" android:layout_width="match_parent">
+		<TextView android:text="Longitute: " android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/TextView03"
+			android:layout_marginLeft="10dip" android:layout_marginRight="5dip" android:textSize="20dip"></TextView>
+		<TextView android:text="unknown" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/TextView04" android:textSize="20dip"></TextView>
+	</LinearLayout>
 
 </LinearLayout>
+
+    
+
+</ScrollView>
